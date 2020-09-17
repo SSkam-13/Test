@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Дмитрий Алексеев &ndash; Web-разработчик</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<script src="js/jquery-3.5.0.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="fixed-container">
+		<header>
+			<nav class="header-nav">
+				<button class="burger-btn" aria-label="Главное меню">
+					<span class="burger-btn__item"></span>
+					<span class="burger-btn__item"></span>
+					<span class="burger-btn__item"></span>
+				</button>
+				<ul class="header-nav__box">
+					<li><a class="header-nav__link" href="#skills">Услуги</a></li>
+					<li><a class="header-nav__link" href="#portfolio">Портфолио</a></li>
+					<li><a class="header-nav__link" href="#pricing">Стоимость</a></li>
+				</ul>
+			</nav>
+			<div class="callback">
+				<a class="callback__tel" href="tel:+74999955577">+7 (499) 995-55-77</a>
+				<button class="callback-button">
+					<span class="fas fa-phone-alt"></span>
+					Заказать звонок
+				</button>
+			</div>	
+		</header>				
+	</div>	
+	<main>	
+		<section class="about" id="about">
+			<img src="img/Man.png" alt="Фото Дмитрия Алексеева">
+			<span class="decor-icon decor-icon_1">{ }</span> 
+			<span class="decor-icon decor-icon_2">#</span>	 
+			<span class="decor-icon decor-icon_3">&lt;/&gt;</span>	 
+			<span class="decor-icon decor-icon_4">&lt;div&gt;</span>
+			<span class="decor-icon decor-icon_5">&lt;div&gt;</span>
+			<div class="fixed-container">
+				<h1 class="page-title">Дмитрий Алексеев</h1>
+				<h2 class="subtitle">Frontend-разработчик и веб-верстальщик</h2>
+				<a class="button" href="#">Узнать больше</a>			
+			</div>
+		</section>
+		<section class="skills" id="skills">
+			<div class="fixed-container">
+				<h3>Что я делаю</h3>
+				<ul class="skills__row">
+					<li class="skills__item">
+						<span class="skills__icon"></span>
+						<h4 class="skills__text">Вёрстка лендинг&ndash;страниц и&nbsp;сайтов любой сложности</h4>
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon"></span>
+						<h4 class="skills__text">Адаптивная вёрстка под все браузеры и&nbsp;устройства</h4>
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon"></span>
+						<h4 class="skills__text">Frontend&ndash;разработка и&nbsp;программирование</h4>
+					</li>
+					<li class="skills__item">
+						<span class="skills__icon"></span>
+						<h4 class="skills__text">Исправление и&nbsp;доработка существующей вёрстки</h4>
+					</li>
+				</ul>	
+				<a class="button" href="#">Узнать стоимость</a>
+			</div>
+		</section>
+		<section class="portfolio" id="portfolio">
+			<div class="fixed-container">
+				<h3>Примеры моих работ</h3>
+				<div class="slider-wrapper">
+					<div class="slider">
+					    <ul class="slider__list">
+					        <li class="slider__item">
+					        	<figure>
+					        		<img src="img/slide-1.jpg" alt="Сайт психолога Веры Антоновой">
+					        		<figcaption>Сайт психолога Веры Антоновой</figcaption>
+					        	</figure>
+					        </li>
+					        <li class="slider__item">
+					        	<figure>
+					        		<img src="img/slide-2.jpg" alt="Сайт магазина детской одежды">
+					        		<figcaption>Сайт магазина детской одежды</figcaption>
+					        	</figure>
+					        </li>
+					        <li class="slider__item">
+					        	<figure>
+					        		<img src="img/slide-3.jpg" alt="Сайт магазина Рыболов">
+					        		<figcaption>Сайт магазина &laquo;Рыболов&raquo;</figcaption>
+					        	</figure>
+					        </li>
+					    </ul>
+					    <div class="slider__pagination pagination" aria-hidden="true"></div>
+					    <button class="slider__button slider__button_prev" aria-label='Предыдущий слайд'></button>
+						<button class="slider__button slider__button_next" aria-label='Следующий слайд'></button>
+					</div>
+				</div>
+				<a class="button" href="#">Заказать проект</a>
+			</div>
+		</section>
+		<section class="pricing" id="pricing">
+			<div class="fixed-container">
+				<h3>Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*</h3>
+				<small class="footnote">
+					* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально, в зависимости от&nbsp;сложности задач.
+				</small>
+			</div>
+		</section>		
+	</main>
+	<footer>
+		<div class="fixed-container">
+			<div class="footer-inner">
+				<nav class="footer-nav">
+					<ul>
+						<li><a class="footer-nav__link" href="#skills">Услуги</a></li>
+						<li><a class="footer-nav__link" href="#portfolio">Портфолио</a></li>
+						<li><a class="footer-nav__link" href="#">Стоимость</a></li>
+					</ul>
+				</nav>
+				<ul class="contacts">
+					<li>
+						<a href="tel:+74999957755">
+							<span class="fas fa-phone-alt"></span>
+							<span class="contacts__tel">+7 (499) 995-77-55</span>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:dmitry@alekseev.com">
+							<span class="fas fa-envelope"></span>
+							<span class="contacts__e-mail">dmitry@alekseev.com</span>
+						</a>
+					</li>
+				</ul>
+				<div class="right-column">
+					<button class="callback-button">Заказать звонок</button>
+					<ul class="social-networks">
+						<li>
+							<a href="https://vk.com/share.php?url=https://skillbox.ru/" target="blank" title="Поделиться в VK"><span class="social-networks__icon vk"></span></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https://skillbox.ru/" target="blank" title="Поделиться в Facebook"><span class="social-networks__icon facebook"></span></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/intent/tweet?url=https://skillbox.ru/" target="blank" title="Поделиться в Twitter"><span class="social-networks__icon twitter"></span></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/" target="blank" title="НЕ поделиться в Instagram :)"><span class="social-networks__icon inst"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<small class="copyright">&copy; Дмитрий Алексеев, 2016 &ndash; 2018</small>
+	</footer>
+	<button class="to-top" title="Вверх... в бесконечность и дальше :)" aria-label='Вернуться в начало страницы'>
+		<span class="fas fa-angle-double-up"></span>
+	</button>
+	<div class="popup-backdrop">
+		<form class="popup" action="https://echo.htmlacademy.ru/">
+			<button class="popup__btn-close" type="button" aria-label="Закрыть окно">
+				<span></span>
+				<span></span>
+			</button>
+			<label class="popup__input">
+				<span>Ваше имя</span>
+				<input type="text" name="Name">
+			</label>
+			<label class="popup__input">
+				<span>Телефон</span>
+				<input type="tel" name="Phone" placeholder="+7(___) ___-____">
+			</label>
+			<textarea class="popup__text" name="Comment" placeholder="Комментарий..."></textarea>
+			<button class="popup__btn-submit">Отправить</button>
+			<div class="popup__notice">Данные отправлены</div>
+		</form>
+	</div>
+</body>
+</html>
