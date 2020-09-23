@@ -132,10 +132,16 @@ $(function(){
 	    }
 
 	    // всё хорошо – отправляем запрос на сервер
-	    $.post(
-	        $form.attr('action'), // ссылка куда отправляем данные
-	        $form.serialize()     // данные формы
-	    );
+	    //$.post(
+	    //    $form.attr('action'), // ссылка куда отправляем данные
+	    //    $form.serialize()     // данные формы
+	    //);
+
+	    $.ajax({
+			type: 'POST',
+			url: 'mail.php',
+			data: $form.serialize(),
+		});
 
 	    //$('.popup__btn-submit')
 	        //.after('<div class="popup__sent">Данные отправлены.</div>');
