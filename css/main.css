@@ -318,7 +318,7 @@ h3 {
 }
 .portfolio {
 	text-align: center;
-    padding: 89px 0 102px;
+    padding: 89px 0 101px;
 }
 .slider-wrapper {
 	position: relative;
@@ -394,10 +394,32 @@ h3 {
 	color: #fff;
 	background-image: linear-gradient(to top right, #ff8f5a, #ff2f96);
 	padding: 74px 0 82px;
+	position: relative;
+    overflow: hidden;
 }
 .pricing .fixed-container {
 	padding: 0 153px;
 }
+.pricing .decor-icon {
+	color: #fff;
+	animation: none;
+}
+.pricing .decor-icon_1 {
+	transform: translate(-831px, -17px) rotate(27deg);
+}
+.pricing .decor-icon_2 {
+	transform: translate(-714px, 174px) rotate(16deg);
+}
+.pricing .decor-icon_3 {
+	transform: translate(696px, -1px) rotate(-23deg);
+}
+.pricing .decor-icon_4 {
+	transform: translate(806px, 181px) rotate(-17deg);
+	font-size: 49px;
+}
+.pricing .decor-icon_5 {
+	transform: translate(463px, 228px) rotate(20deg);
+} 
 .pricing h3 {
 	font-size: 45px;
 	line-height: 1.35;
@@ -535,7 +557,7 @@ footer .callback-button {
 	position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -100%) rotateY(90deg);
+    transform: translate(-50%, -100%);
     transition: .5s;
     color: #fff;
     font-size: 22px;
@@ -840,6 +862,17 @@ footer .callback-button {
 	.pricing .fixed-container {
 	    padding: 0 40px;
 	}
+	.pricing .decor-icon_1 {
+		transform: translate(-357px, -54px) rotate(27deg);
+    	font-size: 34px;
+	}
+	.pricing .decor-icon_3 {
+		transform: translate(361px, 211px) rotate(-23deg);
+	}
+	.pricing .decor-icon_5 {
+		transform: translate(0px, 230px) rotate(20deg);
+    	font-size: 24px;
+	} 
 
 	/* Footer */
 
