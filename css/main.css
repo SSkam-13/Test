@@ -162,10 +162,11 @@ header {
 	font-family: 'Roboto Bold';
 	color: #3a3a3a;
 	transition: 1s;
+	user-select: none;
 }
 .decor-icon_1 {
 	transform: translate(-831px, -154px) rotate(27deg);
-	animation: decor-1 1.5s 1;
+	animation: decor-1 1.5s 1s 1 both;
     font-size: 49px;
 }
 @keyframes decor-1 {
@@ -180,7 +181,7 @@ header {
 }
 .decor-icon_2 {
 	transform: translate(-714px, 75px) rotate(16deg);
-	animation: decor-2 1.8s 1;
+	animation: decor-2 1.8s 2s 1 both;
     font-size: 56px;
 }
 @keyframes decor-2 {
@@ -195,7 +196,7 @@ header {
 }
 .decor-icon_3 {
 	transform: translate(-584px, 380px) rotate(-23deg);
-	animation: decor-3 2.3s 1;
+	animation: decor-3 2.3s 1.5s 1 both;
     font-size: 41px;
 }
 @keyframes decor-3 {
@@ -210,7 +211,7 @@ header {
 }
 .decor-icon_4 {
 	transform: translate(-173px, -123px) rotate(-15deg);
-	animation: decor-4 2.3s 1;
+	animation: decor-4 2.3s 2s 1 both;
     font-size: 30px;
 }
 @keyframes decor-4 {
@@ -225,7 +226,7 @@ header {
 }
 .decor-icon_5 {
 	transform: translate(-9px, 253px) rotate(20deg);
-	animation: decor-5 2s 1;
+	animation: decor-5 2s 1s 1 both;
     font-size: 37px;
 }
 @keyframes decor-5 {
@@ -568,7 +569,29 @@ footer .callback-button {
 .popup_visible {
 	top: 50%;
 	transform: translate(-50%, -50%);
+	/*animation: flipInX 1s;*/
 }
+/*@keyframes flipInX {
+	0% {
+		transform: translate(-50%, -50%) perspective(400px)  rotateX(90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+	40% {
+		transform: translate(-50%, -50%) perspective(400px) rotateX(-20deg);
+		animation-timing-function: ease-in;
+	}
+	60% {
+		transform:translate(-50%, -50%) perspective(400px) rotateX(10deg);
+		opacity: 1;
+	}
+	80% {
+		transform:translate(-50%, -50%) perspective(400px) rotateX(-5deg);
+	}
+	to {
+		transform:translate(-50%, -50%) perspective(400px);
+	}
+}*/
 .popup__btn-close {
 	position: absolute;
 	top: 10px;
